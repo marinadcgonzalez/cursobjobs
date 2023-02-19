@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Actividad final bejobs</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<h1>Create Account</h1>
+			<form action="#" class="formulario" id="formulario">
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" required>
+						<img class="formulario__validacion-estado success" src="images/success-icon.svg">
+						<img class="formulario__validacion-estado error" src="images/error-icon.svg">
+					</div>
+					<p class="formulario__input-error">El nombre solo puede contener letras, espacios y acentos.</p>
+					<p class="formulario__mensaje">Rellene este campo</p>
+				</div>
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo" required>
+						<img class="formulario__validacion-estado success" src="images/success-icon.svg">
+						<img class="formulario__validacion-estado error" src="images/error-icon.svg">
+					</div>
+					<p class="formulario__input-error">Email inválido</p>
+					<p class="formulario__mensaje">Rellene este campo</p>
+				</div>
+				<div class="formulario__grupo" id="grupo__password">
+					<label for="password" class="formulario__label">Clave</label>
+					<div class="formulario__grupo-input">
+						<input type="password" class="formulario__input" name="password" id="password" required>
+						<img class="formulario__validacion-estado success" src="images/success-icon.svg">
+						<img class="formulario__validacion-estado error" src="images/error-icon.svg">
+					</div>
+					<p class="formulario__input-error">La clave no debe tener más de 8 caracteres</p>
+					<p class="formulario__mensaje">Rellene este campo</p>
+				</div>
+				<div class="formulario__grupo" id="grupo__password2">
+					<label for="password2" class="formulario__label">Confirme su clave</label>
+					<div class="formulario__grupo-input">
+						<input type="password" class="formulario__input" name="password2" id="password2" required>
+						<img class="formulario__validacion-estado success" src="images/success-icon.svg">
+						<img class="formulario__validacion-estado error" src="images/error-icon.svg">
+					</div>
+					<p class="formulario__input-error">Las contraseñas no coinciden</p>
+					<p class="formulario__mensaje">Rellene este campo</p>
+				</div>
+				<div class="formulario__grupo">
+					<button type="submit" class="formulario__btn">ENVIAR</button>
+				</div>
+			</form>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>
+
